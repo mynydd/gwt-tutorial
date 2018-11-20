@@ -25,3 +25,9 @@ h1 {
 .gwt-Small-Text {
   font-size:75%;
 }
+
+.greetingWidget {
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+}

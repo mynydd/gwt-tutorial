@@ -4,7 +4,6 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
@@ -34,5 +33,9 @@ public class Tutorial implements EntryPoint {
 
       RootPanel.get("gwtGreenButton").add(btn1);
       RootPanel.get("gwtRedButton").add(Btn2);
+
+      GreetingWidget helloWorld = new GreetingWidget("Hi there","John", "Paul", "Ringo", "George");
+      helloWorld.setStyleName("greetingWidget");
+      RootPanel.get().add(helloWorld);
    }
 }
