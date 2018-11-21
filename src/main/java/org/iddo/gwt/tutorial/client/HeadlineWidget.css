@@ -1,0 +1,6 @@
+.widget {
+     margin: 0 auto;
+     border-style: dotted;
+     border-color: gray;
+     width: 20%;
+ }

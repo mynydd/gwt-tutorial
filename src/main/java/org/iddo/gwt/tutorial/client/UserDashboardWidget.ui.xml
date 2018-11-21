@@ -1,0 +1,12 @@
+<!-- UserDashboardWidget.ui.xmlui.xml -->
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:my='urn:import:org.iddo.gwt.tutorial.client' >
+
+    <ui:style src="UserDashboard.css" />
+    <g:FlowPanel styleName="{style.dashboardPanel}">
+        <my:GreetingWidget/>
+        <my:HeadlineWidget/>
+    </g:FlowPanel>
+</ui:UiBinder>

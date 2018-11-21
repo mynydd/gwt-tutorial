@@ -1,1 +1,13 @@
 .label { padding-right: 10px}
+
+.widget {
+  /*
+  Specifying auto as the second parameter basically tells the browser to automatically determine the left and right
+  margins itself, which it does by setting them equally. It guarantees that the left and right margins will be set to
+  the same size. The first parameter 0 indicates that the top and bottom margins will both be set to 0.
+  */
+  margin: 0 auto;
+  border-style: dotted;
+  border-color: gray;
+  width: 20%;
+}

@@ -2,8 +2,12 @@
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
     <ui:style src="GreetingWidget.css" />
-    <g:HorizontalPanel horizontalAlignment="ALIGN_CENTER">
+    <!--
+    <g:FlowPanel>
         <g:Label styleName="{style.label}" ui:field="greeting"/><g:ListBox ui:field='nameSelector' visibleItemCount='1'/>
-    </g:HorizontalPanel>
-
+    </g:FlowPanel>
+    -->
+    <g:HTMLPanel styleName="{style.widget}">
+        <span class="{style.label}" ui:field="greeting"/><g:ListBox ui:field='nameSelector' visibleItemCount='1'/>
+    </g:HTMLPanel>
 </ui:UiBinder>

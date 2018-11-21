@@ -34,8 +34,6 @@ public class Tutorial implements EntryPoint {
       RootPanel.get("gwtGreenButton").add(btn1);
       RootPanel.get("gwtRedButton").add(Btn2);
 
-      GreetingWidget helloWorld = new GreetingWidget("Hi there","John", "Paul", "Ringo", "George");
-      helloWorld.setStyleName("greetingWidget");
-      RootPanel.get().add(helloWorld);
+      RootPanel.get("dashboard").add(new UserDashboardWidget());
    }
 }

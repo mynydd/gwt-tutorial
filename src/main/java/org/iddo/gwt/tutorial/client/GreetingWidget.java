@@ -1,6 +1,7 @@
 package org.iddo.gwt.tutorial.client;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
@@ -16,12 +17,13 @@ public class GreetingWidget extends Composite {
     ListBox nameSelector;
 
     @UiField
-    Label greeting;
+    //Label greeting;
+    SpanElement greeting;
 
     public GreetingWidget(String greetingText, String... names) {
         // sets nameSelector
         initWidget(uiBinder.createAndBindUi(this));
-        greeting.setText(greetingText);
+        greeting.setInnerText(greetingText);
         for (String name : names) {
             nameSelector.addItem(name);
         }
